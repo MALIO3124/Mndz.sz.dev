@@ -1,3 +1,6 @@
+/* Paleta de Colores: Navy (#2F4156), Teal (#567C8D), Sky Blue (#C8D9E6), Beige (#F5EFEB) */
+
+/* Estilos Globales */
 body {
     font-family: 'Poppins', sans-serif; 
     line-height: 1.6;
@@ -16,29 +19,29 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
-/* Cabecera del Perfil (Asegúrate de que este bloque esté correcto) */
+/* ESTILO ESPECIAL DEL NOMBRE: CELESTE (FRENTE) Y NAVY (DIFUMINADO OSCURO) */
 .perfil h1 {
     font-size: 3em; 
     margin-bottom: 5px;
-    color: #FFFFFF; /* Un color de respaldo simple */
+    color: #FFFFFF; /* Color de respaldo para el texto */
 }
 
-/* ESTILO ESPECIAL DEL NOMBRE: TEAL Y SKY BLUE CON GLOW SUTIL */
 .nombre-estilizado {
-    /* 1. Degradado con tonos de la paleta (Teal a Sky Blue) */
-    background: linear-gradient(90deg, #567C8D, #C8D9E6); 
+    /* 1. Degradado Base (Cian claro a Sky Blue para el frente) */
+    background: linear-gradient(90deg, #A8E8FF, #C8D9E6); 
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent; 
     
-    /* 2. Efecto de "glow" (sombra luminosa) sutil */
+    /* 2. Efecto de Difuminado/Glow (Sombra oscura - Usando Navy #2F4156) */
     text-shadow: 
-        0 0 8px rgba(200, 217, 230, 0.8), /* Sombra principal Sky Blue, con 80% opacidad */
-        0 0 4px rgba(86, 124, 141, 0.6);  /* Sombra secundaria Teal, más difuminada */
+        0 0 10px rgba(47, 65, 86, 0.7), /* Sombra principal más oscura (Navy) */
+        0 0 5px rgba(47, 65, 86, 0.5);  /* Sombra más interna y definida */
     
     display: inline-block; 
     padding: 5px 10px;
     border-radius: 5px;
 }
+/* FIN ESTILO NOMBRE */
 
 .perfil p {
     font-size: 1.2em;
@@ -138,4 +141,13 @@ footer a {
     color: #C8D9E6; /* Sky Blue para resaltar el enlace en el fondo Navy */
     text-decoration: none;
     font-weight: bold;
+}
+
+/* ESTILO PARA LA DECLARACIÓN DE FE EN EL FOOTER */
+.fe-statement {
+    color: #C8D9E6; 
+    font-size: 1.1em;
+    font-weight: 700; 
+    margin-top: 20px;
+    margin-bottom: 5px;
 }
