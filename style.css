@@ -1,0 +1,141 @@
+body {
+    font-family: 'Poppins', sans-serif; 
+    line-height: 1.6;
+    margin: 0;
+    background-color: #2F4156; /* Fondo Principal: Navy */
+    color: #FFFFFF; /* Color de Texto Principal: Blanco */
+    scroll-behavior: smooth; 
+}
+
+/* Cabecera del Perfil */
+.perfil {
+    background: linear-gradient(135deg, #2F4156, #567C8D); /* Degradado: Navy a Teal */
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Cabecera del Perfil (Asegúrate de que este bloque esté correcto) */
+.perfil h1 {
+    font-size: 3em; 
+    margin-bottom: 5px;
+    color: #FFFFFF; /* Un color de respaldo simple */
+}
+
+/* ESTILO ESPECIAL DEL NOMBRE: TEAL Y SKY BLUE CON GLOW SUTIL */
+.nombre-estilizado {
+    /* 1. Degradado con tonos de la paleta (Teal a Sky Blue) */
+    background: linear-gradient(90deg, #567C8D, #C8D9E6); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    
+    /* 2. Efecto de "glow" (sombra luminosa) sutil */
+    text-shadow: 
+        0 0 8px rgba(200, 217, 230, 0.8), /* Sombra principal Sky Blue, con 80% opacidad */
+        0 0 4px rgba(86, 124, 141, 0.6);  /* Sombra secundaria Teal, más difuminada */
+    
+    display: inline-block; 
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.perfil p {
+    font-size: 1.2em;
+    margin-top: 5px;
+    color: #C8D9E6; /* Sky Blue para el Subtítulo */
+}
+
+.perfil img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%; 
+    border: 5px solid #F5EFEB; /* Borde de la foto: Beige */
+    margin-top: 30px;
+}
+
+/* 3. Estilo de la Sección SOBRE MÍ (Biografía) */
+.sobre-mi {
+    background-color: #567C8D; /* Fondo de la Biografía: Teal */
+    padding: 50px 10%; 
+    margin-bottom: 2px;
+}
+
+.sobre-mi p {
+    font-size: 1.1em;
+    text-align: justify; 
+    color: #F5EFEB; /* Texto Beige para excelente contraste y lectura */
+    margin-top: 15px;
+}
+/* ------------------------------------------- */
+
+/* Estilos para todas las Secciones */
+section {
+    padding: 50px 10%; 
+}
+
+h2 {
+    color: #C8D9E6; /* Títulos de Sección: Sky Blue */
+    font-size: 1.8em;
+    border-bottom: 2px solid #567C8D; /* Línea separadora: Teal */
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.habilidades {
+    background-color: #2F4156; /* Fondo: Navy */
+}
+
+.habilidades ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.habilidades li {
+    padding: 10px;
+    background-color: #567C8D; /* Fondo de la lista: Teal */
+    margin-bottom: 8px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: #FFFFFF; /* Texto en blanco */
+}
+
+
+.proyectos, .video-portafolio {
+    background-color: #C8D9E6; /* Fondo: Sky Blue */
+    color: #2F4156; /* Texto: Navy */
+    margin-bottom: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 40px 10%;
+}
+
+.proyectos h2, .video-portafolio h2 {
+    color: #2F4156; /* Títulos en Navy para esta sección */
+    border-bottom: 2px solid #2F4156;
+}
+
+.proyecto h3, .video-clip p {
+    color: #2F4156;
+}
+
+.proyecto a, .video-clip a {
+    color: #567C8D; /* Enlaces: Teal */
+    text-decoration: none;
+    border-bottom: 1px dashed #567C8D;
+}
+
+/* Pie de Página */
+footer {
+    background-color: #2F4156; 
+    color: #FFFFFF;
+    padding: 40px 10%;
+    text-align: center;
+}
+
+footer a {
+    color: #C8D9E6; /* Sky Blue para resaltar el enlace en el fondo Navy */
+    text-decoration: none;
+    font-weight: bold;
+}
