@@ -19,30 +19,32 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
-/* ESTILO ESPECIAL DEL NOMBRE: CELESTE (FRENTE) Y NAVY (DIFUMINADO OSCURO) */
+/* Cabecera del Perfil (Asegúrate de que este bloque esté correcto) */
 .perfil h1 {
     font-size: 3em; 
     margin-bottom: 5px;
-    color: #FFFFFF; /* Color de respaldo para el texto */
+    /* Quitamos el color de respaldo aquí */
 }
 
+/* ESTILO ESPECIAL DEL NOMBRE: COLOR SÓLIDO CIAN/AZUL CIELO */
 .nombre-estilizado {
-    /* 1. Degradado Base (Cian claro a Sky Blue para el frente) */
-    background: linear-gradient(90deg, #A8E8FF, #C8D9E6); 
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent; 
+    /* Quitamos el degradado y la sombra/difuminado */
+    color: #C8D9E6; /* Color Sky Blue de tu paleta (Celeste claro) */
     
-    /* 2. Efecto de Difuminado/Glow (Sombra oscura - Usando Navy #2F4156) */
-    text-shadow: 
-        0 0 10px rgba(47, 65, 86, 0.7), /* Sombra principal más oscura (Navy) */
-        0 0 5px rgba(47, 65, 86, 0.5);  /* Sombra más interna y definida */
+    /* Restauramos las propiedades de presentación */
+    font-weight: bold; /* Para asegurar que el texto se vea fuerte */
     
+    /* Eliminamos las propiedades -webkit que causaban el difuminado y la transparencia */
+    -webkit-background-clip: unset; 
+    -webkit-text-fill-color: unset; 
+    text-shadow: none; 
+
+    /* Mantenemos el padding y el borde (simulado) si los quieres: */
     display: inline-block; 
     padding: 5px 10px;
     border-radius: 5px;
+    border: 1px solid #C8D9E6; /* Añadimos un borde sólido de color cian claro */
 }
-/* FIN ESTILO NOMBRE */
-
 .perfil p {
     font-size: 1.2em;
     margin-top: 5px;
