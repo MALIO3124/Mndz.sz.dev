@@ -3,83 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elías David Méndez Sanchez | Portafolio</title>
+    <title>Elías David Méndez Sanchez | Portafolio Completo</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="header-premium">
+    <header class="hero-header">
         <div class="container">
-            <div class="brand">
-                <svg class="logo-svg" viewBox="0 0 100 100">
+            <div class="brand-identity">
+                <svg class="ed-logo-svg" viewBox="0 0 100 100">
                     <path d="M30 25H70V40H45V48H65V60H45V68H70V82H30V25Z" fill="#C8D9E6"/>
                     <rect x="75" y="25" width="5" height="57" fill="#C8D9E6" fill-opacity="0.3"/>
                 </svg>
-                <div class="brand-text">
+                <div class="brand-titles">
                     <h1>Elías David Méndez Sanchez</h1>
-                    <p>Programador Web | Creador de Contenido Digital</p>
+                    <p class="main-subtitle">Programador Web & Creador de Contenido Digital</p>
                 </div>
             </div>
         </div>
     </header>
 
     <main class="container">
-        <section class="content-section">
-            <h2 class="section-title">Sobre Mí</h2>
-            <div class="text-block">
+        
+        <section class="full-section">
+            <h2 class="section-indicator">01. Sobre Mí</h2>
+            <div class="rich-text">
                 <p>Soy un apasionado de la tecnología y el diseño digital. Me especializo en crear soluciones web que no solo sean funcionales, sino también visualmente atractivas. Con experiencia en programación y creación de contenido, busco siempre innovar en cada proyecto en el que participo.</p>
-                <p>Mi enfoque se centra en la experiencia del usuario, asegurando que cada plataforma sea intuitiva y fácil de usar, sin sacrificar la potencia tecnológica que hay detrás. Creo firmemente que la combinación de una buena lógica de programación con un diseño limpio es la clave para cualquier producto digital exitoso.</p>
-                <p>Constantemente estoy aprendiendo nuevas herramientas y lenguajes para mantenerme a la vanguardia de la industria y poder ofrecer resultados que superen las expectativas.</p>
+                
+                <p>Mi enfoque se centra primordialmente en la experiencia del usuario (UX), asegurando que cada plataforma sea intuitiva y fácil de usar para cualquier persona, sin sacrificar la potencia tecnológica y la robustez del código que hay detrás de la interfaz. Creo firmemente que la combinación de una buena lógica de programación con un diseño limpio y moderno es la clave fundamental para el éxito de cualquier producto digital en la actualidad.</p>
+                
+                <p>Constantemente estoy dedicando tiempo a aprender nuevas herramientas, frameworks y lenguajes de programación para mantenerme a la vanguardia de una industria que evoluciona cada día. Mi objetivo es siempre ofrecer resultados que no solo cumplan, sino que superen las expectativas de los usuarios y clientes más exigentes.</p>
             </div>
         </section>
 
-        <section class="content-section">
-            <h2 class="section-title">Mis Proyectos</h2>
-            <div class="project-list">
-                <article class="project-item">
-                    <div class="project-body">
-                        <span class="category">Experiencia Visual</span>
+        <hr class="divider">
+
+        <section class="full-section">
+            <h2 class="section-indicator">02. Mis Proyectos Destacados</h2>
+            
+            <div class="detailed-projects">
+                <article class="big-card">
+                    <div class="card-visual venus-gradient"></div>
+                    <div class="card-info">
+                        <span class="top-tag">Diseño Premium</span>
                         <h3>Invitación XV - Venus Margarita</h3>
-                        <p>Una invitación interactiva diseñada con efectos visuales avanzados utilizando Canvas API, sistema de partículas y animaciones elegantes para un evento exclusivo. Este proyecto se enfocó en capturar la esencia del evento a través de una experiencia digital inmersiva y personalizada.</p>
-                        <div class="skill-tags">
-                            <span>HTML5</span><span>CSS3</span><span>Canvas API</span><span>JavaScript</span>
+                        <p>Este proyecto consistió en el desarrollo de una invitación interactiva diseñada con un enfoque total en la elegancia y la sofisticación. Utilicé tecnologías avanzadas para crear una experiencia visual única que captura la esencia del evento a través de una interfaz inmersiva.</p>
+                        <p>Implementé efectos visuales utilizando <strong>Canvas API</strong>, un sistema de partículas dinámicas y animaciones fluidas que responden al usuario, logrando una presentación digital de alta costura.</p>
+                        
+                        <div class="tech-pills">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Canvas API</span><span>Responsive Design</span>
                         </div>
-                        <a href="https://xv-venus.vercel.app" target="_blank" class="action-btn">Ver Proyecto en Vivo</a>
+                        
+                        <a href="https://xv-venus.vercel.app" target="_blank" class="btn-primary">Explorar Proyecto Completo</a>
                     </div>
                 </article>
 
-                <article class="project-item">
-                    <div class="project-body">
-                        <span class="category">Desarrollo Web & Datos</span>
+                <article class="big-card">
+                    <div class="card-visual city-gradient"></div>
+                    <div class="card-info">
+                        <span class="top-tag">Desarrollo de Software</span>
                         <h3>Reporte de Baches - City Pulse</h3>
-                        <p>Plataforma web enfocada en la gestión de reportes ciudadanos, utilizando Firebase para el manejo de datos en tiempo real y sistemas de autenticación. Es una solución tecnológica diseñada para mejorar la comunicación entre ciudadanos e infraestructura urbana de forma eficiente.</p>
-                        <div class="skill-tags">
-                            <span>Firebase</span><span>JavaScript</span><span>Realtime DB</span><span>Auth</span>
+                        <p>City Pulse es una plataforma web integral enfocada en la gestión de reportes ciudadanos para mejorar la infraestructura urbana. Es una solución tecnológica diseñada para facilitar la comunicación directa entre los ciudadanos y los encargados del mantenimiento de la ciudad.</p>
+                        <p>El sistema utiliza <strong>Firebase</strong> para el manejo de datos en tiempo real y cuenta con sistemas de autenticación seguros para la gestión de usuarios, garantizando que cada reporte sea procesado de manera eficiente y transparente.</p>
+                        
+                        <div class="tech-pills">
+                            <span>Firebase</span><span>Realtime DB</span><span>Authentication</span><span>JavaScript ES6</span><span>Cloud Integration</span>
                         </div>
-                        <a href="https://baches-en-rb.vercel.app" target="_blank" class="action-btn">Lanzar Aplicación</a>
+                        
+                        <a href="https://baches-en-rb.vercel.app" target="_blank" class="btn-primary">Lanzar Aplicación Web</a>
                     </div>
                 </article>
             </div>
         </section>
 
-        <section class="content-section contact-card">
-            <h2 class="section-title">Contacto</h2>
-            <div class="contact-content">
-                <p>Si tienes un proyecto en mente o simplemente quieres saludar, ¡contáctame!</p>
-                <p class="main-email">eliasmdz083@gmail.com</p>
-                <div class="social-box">
-                    <a href="https://github.com/MALIO3124" target="_blank">GitHub</a>
-                    <a href="https://www.linkedin.com/in/elias-david-433928397" target="_blank">LinkedIn</a>
+        <hr class="divider">
+
+        <section class="full-section contact-area">
+            <h2 class="section-indicator">03. Contacto</h2>
+            <div class="contact-inner">
+                <p>Si tienes un proyecto en mente que necesite un toque profesional de diseño y programación, o simplemente quieres saludar, ¡estoy a un clic de distancia!</p>
+                <div class="contact-methods">
+                    <a href="mailto:eliasmdz083@gmail.com" class="email-link">eliasmdz083@gmail.com</a>
+                    <div class="social-links-row">
+                        <a href="https://github.com/MALIO3124" target="_blank">GITHUB</a>
+                        <a href="https://www.linkedin.com/in/elias-david-433928397" target="_blank">LINKEDIN</a>
+                    </div>
                 </div>
             </div>
         </section>
+
     </main>
 
-    <footer class="main-footer">
+    <footer class="footer-wrap">
         <div class="container">
-            <p class="bible-verse">"Si Dios es conmigo, dime ¿quién contra mi?"</p>
-            <p class="copyright">&copy; 2026 Elías David Méndez Sanchez. Todos los derechos reservados.</p>
+            <h2 class="faith-text">"Si Dios es conmigo ,dime ¿quién contra mi?"</h2>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Elías David Méndez Sanchez. Todos los derechos reservados.</p>
+                <p>Río Bravo, Tamaulipas.</p>
+            </div>
         </div>
     </footer>
 
