@@ -3,115 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elías David Méndez Sanchez | Portafolio Profesional</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Elías David | Digital Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="hero">
-        <div class="hero-content">
-            <div class="logo-circle">
-                <svg viewBox="0 0 100 100" class="logo-svg">
-                    <path d="M30 25H70V40H45V48H65V60H45V68H70V82H30V25Z" fill="white"/>
-                </rect>
-                </svg>
+    <div class="blob-bg"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">ED<span>.</span></div>
+            <div class="nav-status">DISPONIBLE PARA PROYECTOS</div>
+        </div>
+    </nav>
+
+    <header class="hero-premium">
+        <div class="hero-container">
+            <div class="badge-new">SOFTWARE ARCHITECT</div>
+            <h1>Diseño interfaces que <span>conectan</span> ideas.</h1>
+            <p>Soy Elías David Méndez Sanchez, un desarrollador enfocado en crear experiencias digitales intuitivas, elegantes y funcionales.</p>
+            <div class="hero-actions">
+                <a href="#proyectos" class="btn-primary">Ver Portafolio</a>
+                <a href="mailto:eliasmdz083@gmail.com" class="btn-secondary">Contactar</a>
             </div>
-            <h1>Elías David Méndez Sanchez</h1>
-            <p class="role">Programador Web & Creador de Contenido Digital</p>
-            <div class="scroll-indicator">Explora mi trabajo</div>
         </div>
     </header>
 
-    <main class="main-content">
-        <section class="section about">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Sobre Mí</h2>
-                    <div class="underline"></div>
+    <main class="container">
+        <section id="proyectos" class="section">
+            <div class="header-flex">
+                <h2>Proyectos <span>Destacados</span></h2>
+                <p>Casos de estudio y soluciones digitales desarrolladas.</p>
+            </div>
+
+            <div class="grid-experiencia">
+                <div class="glass-card">
+                    <div class="card-header venus-gradient">
+                        <span class="category">DISEÑO CREATIVO</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Invitación XV Venus Margarita</h3>
+                        <p>Una experiencia inmersiva diseñada para capturar la esencia de un evento exclusivo. Implementé un motor de partículas y efectos visuales de alta gama para lograr un impacto inmediato.</p>
+                        <div class="tech-row">
+                            <span>Canvas API</span><span>Motion Design</span><span>UX</span>
+                        </div>
+                        <a href="https://xv-venus.vercel.app" target="_blank" class="card-btn">Lanzar Proyecto →</a>
+                    </div>
                 </div>
-                <div class="about-grid">
-                    <div class="about-text">
-                        <p>Soy un apasionado de la tecnología y el diseño digital. Me especializo en crear soluciones web que no solo sean funcionales, sino también visualmente atractivas. Con experiencia en programación y creación de contenido, busco siempre innovar en cada proyecto en el que participo.</p>
-                        <p>Mi enfoque se centra en la <strong>experiencia del usuario</strong>, asegurando que cada plataforma sea intuitiva y fácil de usar, sin sacrificar la potencia tecnológica que hay detrás.</p>
+
+                <div class="glass-card">
+                    <div class="card-header baches-gradient">
+                        <span class="category">DESARROLLO FULL-STACK</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>City Pulse: Reporte Urbano</h3>
+                        <p>Plataforma técnica para la gestión de infraestructura. Este proyecto integra bases de datos en tiempo real y sistemas de seguridad para ofrecer una herramienta útil a la comunidad.</p>
+                        <div class="tech-row">
+                            <span>Firebase</span><span>Auth</span><span>Realtime DB</span>
+                        </div>
+                        <a href="https://baches-en-rb.vercel.app" target="_blank" class="card-btn">Lanzar Proyecto →</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section projects">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Proyectos Destacados</h2>
-                    <div class="underline"></div>
-                </div>
-                
-                <div class="projects-container">
-                    <article class="project-card">
-                        <div class="card-image venus-bg">
-                            <div class="overlay"><span>UI/UX Design</span></div>
-                        </div>
-                        <div class="card-body">
-                            <h3>Invitación XV - Venus Margarita</h3>
-                            <p class="project-desc">Un proyecto desarrollado con un enfoque en la elegancia y la interactividad. Utilicé tecnologías avanzadas para crear una experiencia visual única que captura la esencia del evento.</p>
-                            <div class="features">
-                                <ul>
-                                    <li>Sistema de partículas dinámico (Canvas)</li>
-                                    <li>Diseño totalmente responsivo</li>
-                                    <li>Animaciones fluidas y elegantes</li>
-                                </ul>
-                            </div>
-                            <div class="tags">
-                                <span>HTML5</span><span>CSS3</span><span>Canvas API</span><span>JavaScript</span>
-                            </div>
-                            <a href="https://xv-venus.vercel.app" target="_blank" class="main-button">Explorar Proyecto</a>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="card-image baches-bg">
-                            <div class="overlay"><span>Data Management</span></div>
-                        </div>
-                        <div class="card-body">
-                            <h3>City Pulse - Reporte de Baches</h3>
-                            <p class="project-desc">Una solución tecnológica diseñada para la comunidad. Este sistema permite gestionar reportes de infraestructura urbana de manera eficiente y transparente.</p>
-                            <div class="features">
-                                <ul>
-                                    <li>Base de datos en tiempo real</li>
-                                    <li>Sistema de autenticación seguro</li>
-                                    <li>Panel de administración intuitivo</li>
-                                </ul>
-                            </div>
-                            <div class="tags">
-                                <span>Firebase</span><span>JavaScript</span><span>Realtime DB</span><span>Auth</span>
-                            </div>
-                            <a href="https://baches-en-rb.vercel.app" target="_blank" class="main-button">Lanzar Plataforma</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="section contact">
-            <div class="container">
-                <div class="contact-box">
-                    <h2>¿Tienes un proyecto en mente?</h2>
-                    <p>Si buscas una página para tu negocio o simplemente quieres platicar sobre una idea, estoy listo para ayudarte.</p>
-                    <a href="mailto:eliasmdz083@gmail.com" class="email-btn">eliasmdz083@gmail.com</a>
-                    <div class="social-links">
-                        <a href="https://github.com/MALIO3124" target="_blank">GitHub</a>
-                        <a href="https://www.linkedin.com/in/elias-david-433928397" target="_blank">LinkedIn</a>
+        <section class="value-proposition">
+            <div class="value-card">
+                <h3>¿Por qué trabajar conmigo?</h3>
+                <div class="value-grid">
+                    <div class="item">
+                        <h4>Intuitivo</h4>
+                        <p>Interfaces fáciles de usar para cualquier cliente.</p>
+                    </div>
+                    <div class="item">
+                        <h4>Escalable</h4>
+                        <p>Código limpio que crece junto con tu negocio.</p>
+                    </div>
+                    <div class="item">
+                        <h4>Personalizado</h4>
+                        <p>Cada detalle se ajusta a la identidad de tu marca.</p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="final-footer">
-        <div class="container">
-            <p class="quote">"Si Dios está con nosotros, ¿quién contra nosotros?"</p>
-            <hr>
-            <p class="copy">&copy; 2026 Elías David Méndez Sanchez. Construido con pasión y código.</p>
+    <footer class="modern-footer">
+        <div class="footer-grid">
+            <div class="footer-info">
+                <p class="faith">"Si Dios es conmigo ,dime ¿quién contra mi?"</p>
+                <p class="copyright">© 2026 Elías David Méndez Sanchez</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/MALIO3124">GitHub</a>
+                <a href="https://www.linkedin.com/in/elias-david-433928397">LinkedIn</a>
+            </div>
         </div>
     </footer>
 
