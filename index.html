@@ -3,82 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ELÍAS DAVID | CORE_TERMINAL</title>
-    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <title>Elías David Méndez Sanchez | Portafolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="grid-overlay"></div>
-
-    <header class="header-v4">
-        <div class="sys-status">
-            <span class="pulse"></span> SYSTEM_ACTIVE // OP_ELIAS_2026
-        </div>
-        
-        <div class="logo-area">
-            <svg class="main-logo" viewBox="0 0 100 100">
-                <defs>
-                    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style="stop-color:#00f2ff;stop-opacity:1" />
-                        <stop offset="100%" style="stop-color:#567C8D;stop-opacity:1" />
-                    </linearGradient>
-                </defs>
-                <path d="M30 20H70V35H45V45H65V55H45V65H70V80H30V20Z" fill="url(#grad)"/>
-                <rect x="75" y="20" width="5" height="60" fill="#00f2ff" opacity="0.5" />
+    
+    <header class="perfil">
+        <div class="logo-wrapper">
+            <svg class="main-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M30 20H70V35H45V45H65V55H45V65H70V80H30V20Z" fill="#C8D9E6"/>
+                <rect x="75" y="20" width="5" height="60" fill="#C8D9E6" fill-opacity="0.4"/>
             </svg>
-            <h1 class="glitch-text">ELÍAS <span>DAVID</span></h1>
         </div>
-        <p class="subtitle">FULL-STACK DEVELOPER & UI ARCHITECT</p>
+        <h1>Elías David Méndez Sanchez</h1>
+        <p class="tagline">Programador Web | Creador de Contenido Digital</p>
     </header>
 
-    <main class="content-terminal">
-        <section class="bio-terminal">
-            <div class="terminal-header">ABOUT_ME.log</div>
-            <div class="terminal-window">
-                <p>> Especialista en transformar ideas en código funcional.</p>
-                <p>> Dominio de bases de datos en tiempo real y experiencias interactivas.</p>
-                <p>> Enfoque: Soluciones que escalan y diseños que impactan.</p>
-            </div>
-        </section>
+    <section class="sobre-mi">
+        <div class="container">
+            <h2>Sobre Mí</h2>
+            <p>Soy un apasionado de la tecnología y el diseño digital. Me especializo en crear soluciones web que no solo sean funcionales, sino también visualmente atractivas. Con experiencia en programación y creación de contenido, busco siempre innovar en cada proyecto en el que participo.</p>
+        </div>
+    </section>
 
-        <section class="proyectos-grid">
-            <div class="cyber-card">
-                <div class="card-edge"></div>
-                <div class="card-content">
-                    <span class="card-tag">INFRASTRUCTURE</span>
-                    <h3>CITY PULSE</h3>
-                    <p>Terminal de monitoreo urbano. Firebase Real-time DB & Admin Auth.</p>
-                    <div class="tech-stack">
-                        <span>JS_ES6</span><span>FIREBASE</span><span>CSS_GRID</span>
+    <section class="proyectos">
+        <div class="container">
+            <h2>Mis Proyectos</h2>
+            <div class="contenedor-proyectos">
+                <div class="proyecto-card">
+                    <div class="proyecto-info">
+                        <h3>Invitación XV - Venus Margarita</h3>
+                        <p>Una invitación interactiva diseñada con efectos visuales avanzados utilizando Canvas API, sistema de partículas y animaciones elegantes para un evento exclusivo.</p>
+                        <div class="skills-tags">
+                            <span>HTML5</span><span>CSS3</span><span>Canvas API</span>
+                        </div>
+                        <a href="https://xv-venus.vercel.app" target="_blank" class="btn-link">Ver Proyecto</a>
                     </div>
-                    <a href="https://baches-en-rb.vercel.app" target="_blank" class="btn-cyber">EJECUTAR_APP</a>
                 </div>
-            </div>
 
-            <div class="cyber-card">
-                <div class="card-edge gala-edge"></div>
-                <div class="card-content">
-                    <span class="card-tag">CREATIVE_UI</span>
-                    <h3>GALA EXPERIENCE</h3>
-                    <p>Interfaz de alta gama. Canvas API, Particles & Scroll Animations.</p>
-                    <div class="tech-stack">
-                        <span>CANVAS_API</span><span>ANIMATE</span><span>UX</span>
+                <div class="proyecto-card">
+                    <div class="proyecto-info">
+                        <h3>Reporte de Baches - City Pulse</h3>
+                        <p>Plataforma web enfocada en la gestión de reportes ciudadanos, utilizando Firebase para el manejo de datos en tiempo real y sistemas de autenticación.</p>
+                        <div class="skills-tags">
+                            <span>Firebase</span><span>JavaScript</span><span>Realtime DB</span>
+                        </div>
+                        <a href="https://baches-en-rb.vercel.app" target="_blank" class="btn-link">Ver Proyecto</a>
                     </div>
-                    <a href="https://xv-venus.vercel.app" target="_blank" class="btn-cyber">VER_GALA</a>
                 </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-core">
-            <p class="faith-badge">ROMANOS 8:31</p>
-            <p>CONTACT: eliasmdz083@gmail.com</p>
-            <div class="social-nodes">
-                <a href="https://github.com/MALIO3124">GITHUB</a>
-                <a href="https://www.linkedin.com/in/elias-david-433928397">LINKEDIN</a>
             </div>
         </div>
+    </section>
+
+    <section class="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>Si tienes un proyecto en mente o simplemente quieres saludar, ¡contáctame!</p>
+            <p><strong>Email:</strong> eliasmdz083@gmail.com</p>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/elias-david-433928397" target="_blank">LinkedIn</a>
+                <a href="https://github.com/MALIO3124" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>"Si Dios está con nosotros, ¿quién contra nosotros?"</p>
+        <p>&copy; 2026 Elías David Méndez Sanchez. Todos los derechos reservados.</p>
     </footer>
+
 </body>
 </html>

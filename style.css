@@ -1,152 +1,147 @@
 :root {
-    --cyan: #00f2ff;
-    --orange: #ff6b00;
-    --bg: #050608;
-    --glass: rgba(15, 17, 20, 0.9);
-    --border: rgba(0, 242, 255, 0.1);
+    --navy: #2F4156;
+    --teal: #567C8D;
+    --sky: #C8D9E6;
+    --beige: #F5EFEB;
+    --white: #FFFFFF;
 }
 
 body {
-    background: var(--bg);
-    color: #fff;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
-    overflow-x: hidden;
+    padding: 0;
+    background-color: var(--beige);
+    color: var(--navy);
 }
 
-/* RECUPERADA: Malla de fondo de City Pulse */
-.grid-overlay {
-    position: fixed; inset: 0;
-    background-image: 
-        linear-gradient(rgba(0, 242, 255, 0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0, 242, 255, 0.03) 1px, transparent 1px);
-    background-size: 50px 50px;
-    z-index: -1;
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-/* Header con estilo Terminal */
-.header-v4 {
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+/* Header Estilo Original */
+.perfil {
+    background-color: var(--navy);
+    color: var(--white);
+    text-align: center;
+    padding: 80px 20px;
 }
 
-.sys-status {
-    font-family: 'Syncopate';
-    font-size: 10px;
-    letter-spacing: 3px;
-    color: #00ff00;
+.main-logo {
+    width: 60px;
+    height: 60px;
     margin-bottom: 20px;
 }
 
-.pulse {
-    display: inline-block;
-    width: 8px; height: 8px;
-    background: #00ff00;
-    border-radius: 50%;
-    box-shadow: 0 0 10px #00ff00;
-    animation: blink 1.5s infinite;
-    margin-right: 10px;
+.perfil h1 {
+    margin: 10px 0;
+    font-size: 2.5rem;
 }
 
-@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
-
-.main-logo { width: 90px; height: 90px; margin-bottom: 20px; filter: drop-shadow(0 0 10px var(--cyan)); }
-
-.glitch-text {
-    font-family: 'Syncopate';
-    font-size: clamp(2rem, 8vw, 4rem);
-    text-transform: uppercase;
-    letter-spacing: -2px;
+.tagline {
+    font-size: 1.2rem;
+    color: var(--sky);
 }
 
-.glitch-text span {
-    color: transparent;
-    -webkit-text-stroke: 1px var(--cyan);
+/* Secciones */
+section {
+    padding: 60px 0;
 }
 
-.subtitle {
-    font-family: 'Syncopate';
-    font-size: 10px;
-    color: var(--cyan);
-    opacity: 0.6;
-    margin-top: 10px;
+h2 {
+    text-align: center;
+    color: var(--teal);
+    margin-bottom: 40px;
+    font-size: 2rem;
 }
 
-/* Terminal Window */
-.terminal-window {
-    background: var(--glass);
-    border: 1px solid var(--border);
-    padding: 25px;
-    border-radius: 5px;
-    font-family: monospace;
-    max-width: 600px;
-    margin: 0 auto;
-    color: #00ff00;
+.sobre-mi p {
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.8;
 }
 
-/* Cyber Cards */
-.proyectos-grid {
+/* Tarjetas de Proyectos */
+.contenedor-proyectos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    padding: 60px 10%;
 }
 
-.cyber-card {
-    position: relative;
-    background: var(--glass);
-    border: 1px solid var(--border);
-    padding: 30px;
-    transition: 0.3s;
+.proyecto-card {
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
     overflow: hidden;
+    transition: transform 0.3s ease;
+    border-top: 5px solid var(--teal);
 }
 
-.card-edge {
-    position: absolute;
-    top: 0; left: 0; width: 4px; height: 100%;
-    background: var(--cyan);
-    box-shadow: 0 0 15px var(--cyan);
+.proyecto-card:hover {
+    transform: translateY(-10px);
 }
 
-.gala-edge { background: #b38728; box-shadow: 0 0 15px #b38728; }
-
-.cyber-card:hover {
-    transform: scale(1.02);
-    background: rgba(0, 242, 255, 0.05);
+.proyecto-info {
+    padding: 25px;
 }
 
-.btn-cyber {
+.skills-tags {
+    margin: 15px 0;
+}
+
+.skills-tags span {
+    background: var(--sky);
+    color: var(--navy);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-right: 5px;
+    font-weight: 600;
+}
+
+.btn-link {
     display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    background: transparent;
-    border: 1px solid var(--cyan);
-    color: var(--cyan);
+    margin-top: 15px;
+    color: var(--teal);
     text-decoration: none;
-    font-family: 'Syncopate';
-    font-size: 10px;
+    font-weight: 700;
+    border-bottom: 2px solid var(--teal);
     transition: 0.3s;
 }
 
-.btn-cyber:hover {
-    background: var(--cyan);
-    color: #000;
-    box-shadow: 0 0 20px var(--cyan);
+.btn-link:hover {
+    color: var(--navy);
+    border-color: var(--navy);
+}
+
+/* Contacto y Redes */
+.contacto {
+    text-align: center;
+    background-color: var(--sky);
+}
+
+.redes {
+    margin-top: 20px;
+}
+
+.redes a {
+    margin: 0 15px;
+    color: var(--navy);
+    text-decoration: none;
+    font-weight: 600;
 }
 
 /* Footer */
 footer {
+    background-color: var(--navy);
+    color: var(--white);
     text-align: center;
-    padding: 80px 20px;
-    border-top: 1px solid var(--border);
+    padding: 40px 20px;
 }
 
-.faith-badge {
-    font-family: 'Syncopate';
-    font-size: 12px;
-    color: var(--orange);
+footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    opacity: 0.8;
 }
