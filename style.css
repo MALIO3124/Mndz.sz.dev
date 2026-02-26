@@ -1,155 +1,175 @@
-/* Paleta de Colores: Navy (#2F4156), Teal (#567C8D), Sky Blue (#C8D9E6), Beige (#F5EFEB) */
+:root {
+    --navy: #0f172a;
+    --teal: #567C8D;
+    --sky: #C8D9E6;
+    --white: #F8FAFC;
+    --transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
 
-/* Estilos Globales */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
 body {
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Inter', sans-serif;
+    background-color: var(--navy);
+    color: var(--white);
     line-height: 1.6;
-    margin: 0;
-    background-color: #2F4156; /* Fondo Principal: Navy */
-    color: #FFFFFF; /* Color de Texto Principal: Blanco */
-    scroll-behavior: smooth; 
+    overflow-x: hidden;
 }
 
-/* Cabecera del Perfil */
+h1, h2, h3 { font-family: 'Poppins', sans-serif; }
+
+.section-container { max-width: 1100px; margin: 0 auto; padding: 0 25px; }
+
+/* --- HEADER & LOGO --- */
 .perfil {
-    background: linear-gradient(135deg, #2F4156, #567C8D); /* Degradado: Navy a Teal */
-    color: white;
-    padding: 80px 20px;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid rgba(200, 217, 230, 0.1);
 }
 
-/* Cabecera del Perfil (Asegúrate de que este bloque esté correcto) */
-.perfil h1 {
-    font-size: 3em; 
-    margin-bottom: 5px;
-    /* Quitamos el color de respaldo aquí */
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 0;
 }
 
-/* ESTILO ESPECIAL DEL NOMBRE: COLOR SÓLIDO CIAN/AZUL CIELO */
+.main-logo {
+    width: 100px;
+    height: 100px;
+    filter: drop-shadow(0 0 15px rgba(200, 217, 230, 0.2));
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.logo-container:hover .main-logo {
+    transform: scale(1.1) rotate(-3deg);
+    filter: drop-shadow(0 0 25px rgba(200, 217, 230, 0.4));
+}
+
 .nombre-estilizado {
-    /* Quitamos el degradado y la sombra/difuminado */
-    color: #C8D9E6; /* Color Sky Blue de tu paleta (Celeste claro) */
-    
-    /* Restauramos las propiedades de presentación */
-    font-weight: bold; /* Para asegurar que el texto se vea fuerte */
-    
-    /* Eliminamos las propiedades -webkit que causaban el difuminado y la transparencia */
-    -webkit-background-clip: unset; 
-    -webkit-text-fill-color: unset; 
-    text-shadow: none; 
-
-    /* Mantenemos el padding y el borde (simulado) si los quieres: */
-    display: inline-block; 
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: 1px solid #C8D9E6; /* Añadimos un borde sólido de color cian claro */
-}
-.perfil p {
-    font-size: 1.2em;
-    margin-top: 5px;
-    color: #C8D9E6; /* Sky Blue para el Subtítulo */
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: -2px;
 }
 
-.perfil img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%; 
-    border: 5px solid #F5EFEB; /* Borde de la foto: Beige */
-    margin-top: 30px;
+.tagline {
+    font-size: 1.2rem;
+    color: var(--sky);
+    font-weight: 300;
+    letter-spacing: 1px;
+    opacity: 0.8;
 }
 
-/* 3. Estilo de la Sección SOBRE MÍ (Biografía) */
-.sobre-mi {
-    background-color: #567C8D; /* Fondo de la Biografía: Teal */
-    padding: 50px 10%; 
-    margin-bottom: 2px;
+.badge {
+    font-size: 0.7rem;
+    padding: 6px 16px;
+    border: 1px solid rgba(200, 217, 230, 0.3);
+    border-radius: 30px;
+    letter-spacing: 2px;
+    color: var(--sky);
 }
 
-.sobre-mi p {
-    font-size: 1.1em;
-    text-align: justify; 
-    color: #F5EFEB; /* Texto Beige para excelente contraste y lectura */
-    margin-top: 15px;
+.social-links-head { margin-top: 30px; }
+.social-links-head a { 
+    color: var(--white); 
+    text-decoration: none; 
+    font-size: 0.8rem; 
+    letter-spacing: 2px;
+    transition: 0.3s;
 }
-/* ------------------------------------------- */
+.social-links-head a:hover { color: var(--sky); }
+.sep { margin: 0 15px; opacity: 0.2; }
 
-/* Estilos para todas las Secciones */
-section {
-    padding: 50px 10%; 
-}
+/* --- SECCIONES --- */
+section { padding: 100px 0; }
 
 h2 {
-    color: #C8D9E6; /* Títulos de Sección: Sky Blue */
-    font-size: 1.8em;
-    border-bottom: 2px solid #567C8D; /* Línea separadora: Teal */
-    padding-bottom: 10px;
+    font-size: 2rem;
     margin-bottom: 40px;
-    text-align: center;
+    border-left: 4px solid var(--sky);
+    padding-left: 20px;
 }
 
-.habilidades {
-    background-color: #2F4156; /* Fondo: Navy */
+.bio-content p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    color: #94a3b8;
 }
 
-.habilidades ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
+/* --- CARDS --- */
+.contenedor-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
 }
 
-.habilidades li {
-    padding: 10px;
-    background-color: #567C8D; /* Fondo de la lista: Teal */
-    margin-bottom: 8px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    color: #FFFFFF; /* Texto en blanco */
+.proyecto-card {
+    background: #1e293b;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.05);
+    transition: var(--transition);
 }
 
-
-.proyectos, .video-portafolio {
-    background-color: #C8D9E6; /* Fondo: Sky Blue */
-    color: #2F4156; /* Texto: Navy */
-    margin-bottom: 2px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    padding: 40px 10%;
+.proyecto-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--sky);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
 }
 
-.proyectos h2, .video-portafolio h2 {
-    color: #2F4156; /* Títulos en Navy para esta sección */
-    border-bottom: 2px solid #2F4156;
+.card-visual { height: 160px; position: relative; display: flex; align-items: center; justify-content: center; }
+.tech-bg { background: linear-gradient(45deg, #0f172a, #1e293b); }
+.gala-bg { background: linear-gradient(45deg, #f4c2c2, #b38728); opacity: 0.8; }
+
+.tech-tag {
+    position: absolute; bottom: 15px; left: 15px;
+    background: var(--sky); color: var(--navy);
+    padding: 4px 12px; font-size: 0.6rem; font-weight: 700; border-radius: 4px;
 }
 
-.proyecto h3, .video-clip p {
-    color: #2F4156;
+.proyecto-info { padding: 25px; }
+.proyecto-info h3 { margin-bottom: 10px; font-size: 1.4rem; }
+.proyecto-info p { font-size: 0.9rem; color: #94a3b8; margin-bottom: 20px; }
+
+.skills-used span {
+    font-size: 0.7rem;
+    background: rgba(200, 217, 230, 0.05);
+    padding: 4px 10px;
+    margin-right: 8px;
+    border-radius: 4px;
+    color: var(--sky);
 }
 
-.proyecto a, .video-clip a {
-    color: #567C8D; /* Enlaces: Teal */
-    text-decoration: none;
-    border-bottom: 1px dashed #567C8D;
+.btn-proyecto {
+    display: block; text-align: center;
+    background: var(--sky); color: var(--navy);
+    text-decoration: none; font-weight: 700;
+    padding: 12px; border-radius: 8px; margin-top: 25px;
+    transition: 0.3s;
 }
 
-/* Pie de Página */
+.btn-proyecto:hover { background: var(--white); }
+
+/* --- FOOTER --- */
 footer {
-    background-color: #2F4156; 
-    color: #FFFFFF;
-    padding: 40px 10%;
+    padding: 100px 25px;
+    background: #020617;
     text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.05);
 }
 
-footer a {
-    color: #C8D9E6; /* Sky Blue para resaltar el enlace en el fondo Navy */
-    text-decoration: none;
-    font-weight: bold;
-}
+.fe-statement { font-family: 'Poppins'; font-style: italic; color: var(--sky); font-size: 1.4rem; margin-bottom: 15px; }
+.email-contact { opacity: 0.6; font-size: 0.9rem; }
+.legal { margin-top: 40px; font-size: 0.7rem; opacity: 0.3; letter-spacing: 1px; }
 
-/* ESTILO PARA LA DECLARACIÓN DE FE EN EL FOOTER */
-.fe-statement {
-    color: #C8D9E6; 
-    font-size: 1.1em;
-    font-weight: 700; 
-    margin-top: 20px;
-    margin-bottom: 5px;
+/* Responsive */
+@media (max-width: 768px) {
+    .nombre-estilizado { font-size: 2.5rem; }
+    .perfil { height: auto; padding: 100px 20px; }
 }

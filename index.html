@@ -3,70 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elías David Méndez Sanchez | Portafolio Digital</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"> 
+    <title>Elías David | Software Architect & Experience Designer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
     <header class="perfil">
-        <h1><span class="nombre-estilizado">Elías David Méndez Sanchez</span></h1>
-        <p>Desarrollador Full-Cycle con Propósito | Web | Video | Diseño</p>
-        <img src="tu_foto.jpg" alt="Foto de Perfil de Elías">
+        <div class="header-content">
+            <span class="badge">SOLUCIONES DIGITALES FULL-CYCLE</span>
+            
+            <div class="logo-container">
+                <svg class="main-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#C8D9E6;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#567C8D;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M30 20H70V35H45V45H65V55H45V65H70V80H30V20Z" fill="url(#logoGrad)"/>
+                    <rect x="75" y="20" width="6" height="60" rx="3" fill="#C8D9E6" fill-opacity="0.3"/>
+                </svg>
+                <h1><span class="nombre-estilizado">Elías David</span></h1>
+            </div>
+
+            <p class="tagline">Software Architect & Experience Designer</p>
+            
+            <div class="social-links-head">
+                <a href="https://github.com/MALIO3124" target="_blank">GITHUB</a>
+                <span class="sep">|</span>
+                <a href="https://www.linkedin.com/in/elias-david-433928397" target="_blank">LINKEDIN</a>
+            </div>
+        </div>
     </header>
 
-    <section class="sobre-mi">
-        <h2>Sobre Mí</h2>
-        <p>
-            Soy un profesional integral con un enfoque dual en la Programación Web y la Creación de Contenido Digital. 
-            <br><br>
-            💻 Desarrollo Web: Cuento con dominio de HTML, CSS, y JavaScript, herramientas esenciales para construir la estructura, el diseño y la interactividad de sitios web modernos.
-            <br><br>
-            🎨 Diseño y Edición: Combino mi destreza en código con una fuerte habilidad para el Diseño Gráfico y la Edición de Video, utilizando Canva para producir materiales visuales atractivos y funcionales.
-            <br><br>
-            📈 Aptitud y Fe: Mi mentalidad alegre y proactiva está anclada en la fe, lo que me impulsa a buscar la excelencia en cada proyecto. Soy un profesional autodidacta con una filosofía clara: "La sabiduría viene de lo Alto", por lo tanto, si no lo sé hacer, lo aprenderé y lo dominaré. Complemento mis habilidades técnicas con un nivel B1 de inglés. Además, mi experiencia como futbolista me ha inculcado disciplina y el valor de trabajar bajo presión.
-        </p>
-    </section>
-
-    <section class="habilidades">
-        <h2>Habilidades Clave y Herramientas</h2>
-        <ul>
-            <li>Programación Web: HTML, CSS, JavaScript.</li>
-            <li>Edición de Video y Diseño: Canva & DaVinci Resolve.</li>
-            <li>Idiomas: Inglés (Nivel B1).</li>
-        </ul>
-    </section>
-
-    <section class="proyectos">
-        <h2>Portafolio de Desarrollo Web</h2>
-        <div class="proyecto">
-            <h3>Página Interactiva con Efectos CSS</h3>
-            <p>Ejemplo de un proyecto personal con diseño responsivo y alta interactividad.</p>
-            <a href="URL_A_TU_PROYECTO">Ver Sitio Web</a>
-        </div>
+    <main class="section-container">
+        <section class="sobre-mi">
+            <h2>Sobre Mí</h2>
+            <div class="bio-content">
+                <p>
+                    Desarrollador enfocado en transformar problemas complejos en interfaces intuitivas. 
+                    Especializado en el ecosistema <strong>Full-Stack</strong>, combino la robustez de 
+                    bases de datos en tiempo real con la elegancia del diseño creativo.
+                    <br><br>
+                    Mi filosofía: <em>"La tecnología debe ser tan funcional como hermosa."</em>
+                </p>
+            </div>
         </section>
 
-    <section class="video-portafolio">
-        <h2>Muestras de Edición de Video</h2>
-        <div class="video-clip">
-            <p>Clip editado para redes sociales o YouTube (Usando Canva).</p>
-            <a href="URL_A_TU_VIDEO_YOUTUBE">Ver Video Editado</a>
-        </div>
-    </section>
+        <section class="proyectos">
+            <h2>Casos de Éxito</h2>
+            <div class="contenedor-proyectos">
+                
+                <article class="proyecto-card">
+                    <div class="card-visual tech-bg">
+                        <span class="tech-tag">REAL-TIME DB</span>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>CITY PULSE: Core Terminal</h3>
+                        <p>Plataforma de monitoreo de infraestructura con Firebase. Gestión de datos críticos y panel de administración.</p>
+                        <div class="skills-used">
+                            <span>Firebase</span><span>JS ES6</span><span>UI/UX</span>
+                        </div>
+                        <a href="https://baches-en-rb.vercel.app" target="_blank" class="btn-proyecto">Ejecutar App</a>
+                    </div>
+                </article>
+
+                <article class="proyecto-card">
+                    <div class="card-visual gala-bg">
+                        <span class="tech-tag">CANVAS API</span>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>Gala Experience</h3>
+                        <p>Diseño premium con sistemas de partículas dinámicas y animaciones de alto rendimiento para eventos de lujo.</p>
+                        <div class="skills-used">
+                            <span>Canvas</span><span>GSAP</span><span>Mobile First</span>
+                        </div>
+                        <a href="https://xv-venus.vercel.app" target="_blank" class="btn-proyecto">Ver Experiencia</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <h2>Contáctame</h2>
-        <p>Correo: eliasmdz083@gmail.com</p>
-        <p>GitHub: <a href="https://github.com/MALIO3124" target="_blank">MALIO3124</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/elias-david-433928397" target="_blank">Elías David Méndez</a></p>
-        
-        <p class="fe-statement">
-          Si Dios es conmigo,dime ¿quién contra mi? (Romanos 8:31)
-        </p>
-
-        <p>Derechos Reservados © 2026 Elías D.M.S.</p>
+        <div class="footer-content">
+            <p class="fe-statement">"La sabiduría viene de lo Alto"</p>
+            <p class="email-contact">eliasmdz083@gmail.com</p>
+            <div class="legal">
+                <p>© 2026 Elías David Méndez Sanchez • Río Bravo, MX</p>
+            </div>
+        </div>
     </footer>
 
 </body>
 </html>
-
