@@ -9,14 +9,36 @@
 </head>
 <body>
 
+    <!-- Fondos ambientales animados -->
+    <div class="ambient-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Navegación flotante -->
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <a href="#" class="nav-brand">Mndz<span>.Sz</span></a>
+            <div class="nav-links">
+                <a href="#sobre-mi">Sobre Mí</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
     <header class="hero-header">
         <div class="container">
-            <div class="brand-identity">
-                <svg class="ed-logo-svg" viewBox="0 0 100 100">
-                    <path d="M30 25H70V40H45V48H65V60H45V68H70V82H30V25Z" fill="#C8D9E6"/>
-                    <rect x="75" y="25" width="5" height="57" fill="#C8D9E6" fill-opacity="0.3"/>
-                </svg>
+            <div class="brand-identity reveal">
+                <div class="logo-wrapper">
+                    <svg class="ed-logo-svg" viewBox="0 0 100 100">
+                        <path class="logo-path" d="M30 25H70V40H45V48H65V60H45V68H70V82H30V25Z" fill="#C8D9E6"/>
+                        <rect class="logo-accent" x="75" y="25" width="5" height="57" fill="#567C8D"/>
+                    </svg>
+                </div>
                 <div class="brand-titles">
+                    <span class="status-badge"><span class="pulse-dot"></span> Disponible para proyectos</span>
                     <h1>Elías David Méndez Sanchez</h1>
                     <p class="main-subtitle">Programador Web & Creador de Contenido Digital</p>
                 </div>
@@ -26,9 +48,9 @@
 
     <main class="container">
         
-        <section class="full-section">
-            <h2 class="section-indicator">01. Sobre Mí</h2>
-            <div class="rich-text">
+        <section id="sobre-mi" class="full-section">
+            <h2 class="section-indicator reveal">01. Sobre Mí</h2>
+            <div class="rich-text glass-panel reveal">
                 <p>Soy un apasionado de la tecnología y el diseño digital. Me especializo en crear soluciones web que no solo sean funcionales, sino también visualmente atractivas. Con experiencia en programación y creación de contenido, busco siempre innovar en cada proyecto en el que participo.</p>
                 
                 <p>Mi enfoque se centra primordialmente en la experiencia del usuario (UX), asegurando que cada plataforma sea intuitiva y fácil de usar para cualquier persona, sin sacrificar la potencia tecnológica y la robustez del código que hay detrás de la interfaz. Creo firmemente que la combinación de una buena lógica de programación con un diseño limpio y moderno es la clave fundamental para el éxito de cualquier producto digital en la actualidad.</p>
@@ -39,14 +61,17 @@
 
         <hr class="divider">
 
-        <section class="full-section">
-            <h2 class="section-indicator">02. Mis Proyectos Destacados</h2>
+        <section id="proyectos" class="full-section">
+            <h2 class="section-indicator reveal">02. Mis Proyectos Destacados</h2>
             
             <div class="detailed-projects">
-                <article class="big-card">
+                <article class="big-card spotlight-card reveal">
                     <div class="card-visual venus-gradient"></div>
                     <div class="card-info">
-                        <span class="top-tag">Diseño Premium</span>
+                        <div class="card-header-top">
+                            <span class="top-tag">Diseño Premium</span>
+                            <span class="project-year">01</span>
+                        </div>
                         <h3>Invitación XV - Venus Margarita</h3>
                         <p>Este proyecto consistió en el desarrollo de una invitación interactiva diseñada con un enfoque total en la elegancia y la sofisticación. Utilicé tecnologías avanzadas para crear una experiencia visual única que captura la esencia del evento a través de una interfaz inmersiva.</p>
                         <p>Implementé efectos visuales utilizando <strong>Canvas API</strong>, un sistema de partículas dinámicas y animaciones fluidas que responden al usuario, logrando una presentación digital de alta costura.</p>
@@ -55,14 +80,20 @@
                             <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Canvas API</span><span>Responsive Design</span>
                         </div>
                         
-                        <a href="https://xv-venus.vercel.app" target="_blank" class="btn-primary">Explorar Proyecto Completo</a>
+                        <a href="https://xv-venus.vercel.app" target="_blank" class="btn-primary">
+                            <span>Explorar Proyecto Completo</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+                        </a>
                     </div>
                 </article>
 
-                <article class="big-card">
+                <article class="big-card spotlight-card reveal">
                     <div class="card-visual city-gradient"></div>
                     <div class="card-info">
-                        <span class="top-tag">Desarrollo de Software</span>
+                        <div class="card-header-top">
+                            <span class="top-tag">Desarrollo de Software</span>
+                            <span class="project-year">02</span>
+                        </div>
                         <h3>Reporte de Baches - City Pulse</h3>
                         <p>City Pulse es una plataforma web integral enfocada en la gestión de reportes ciudadanos para mejorar la infraestructura urbana. Es una solución tecnológica diseñada para facilitar la comunicación directa entre los ciudadanos y los encargados del mantenimiento de la ciudad.</p>
                         <p>El sistema utiliza <strong>Firebase</strong> para el manejo de datos en tiempo real y cuenta con sistemas de autenticación seguros para la gestión de usuarios, garantizando que cada reporte sea procesado de manera eficiente y transparente.</p>
@@ -71,7 +102,10 @@
                             <span>Firebase</span><span>Realtime DB</span><span>Authentication</span><span>JavaScript ES6</span><span>Cloud Integration</span>
                         </div>
                         
-                        <a href="https://baches-en-rb.vercel.app" target="_blank" class="btn-primary">Lanzar Aplicación Web</a>
+                        <a href="https://baches-en-rb.vercel.app" target="_blank" class="btn-primary">
+                            <span>Lanzar Aplicación Web</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+                        </a>
                     </div>
                 </article>
             </div>
@@ -79,15 +113,15 @@
 
         <hr class="divider">
 
-        <section class="full-section contact-area">
-            <h2 class="section-indicator">03. Contacto</h2>
-            <div class="contact-inner">
+        <section id="contacto" class="full-section contact-area">
+            <h2 class="section-indicator reveal">03. Contacto</h2>
+            <div class="contact-inner glass-panel reveal">
                 <p>Si tienes un proyecto en mente que necesite un toque profesional de diseño y programación, o simplemente quieres saludar, ¡estoy a un clic de distancia!</p>
                 <div class="contact-methods">
                     <a href="mailto:eliasmdz083@gmail.com" class="email-link">eliasmdz083@gmail.com</a>
                     <div class="social-links-row">
-                        <a href="https://github.com/MALIO3124" target="_blank">GITHUB</a>
-                        <a href="https://www.linkedin.com/in/elias-david-433928397" target="_blank">LINKEDIN</a>
+                        <a href="https://github.com/MALIO3124" target="_blank" class="social-pill">GITHUB</a>
+                        <a href="https://www.linkedin.com/in/elias-david-433928397" target="_blank" class="social-pill">LINKEDIN</a>
                     </div>
                 </div>
             </div>
@@ -97,13 +131,38 @@
 
     <footer class="footer-wrap">
         <div class="container">
-            <h2 class="faith-text">"Si Dios es conmigo ,dime ¿quién contra mi?"</h2>
+            <h2 class="faith-text reveal">"Si Dios es conmigo ,dime ¿quién contra mi?"</h2>
             <div class="footer-bottom">
                 <p>&copy; 2026 Elías David Méndez Sanchez. Todos los derechos reservados.</p>
                 <p>Río Bravo, Tamaulipas.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Script ligero para animaciones al hacer scroll y brillo interactivo -->
+    <script>
+        // 1. Animación Reveal al hacer scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.12 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // 2. Efecto de foco de luz (Spotlight) siguiendo el cursor en las tarjetas
+        document.querySelectorAll('.spotlight-card').forEach(card => {
+            card.addEventListener('mousemove', e => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+    </script>
 
 </body>
 </html>
